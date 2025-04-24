@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:6-alpine
+    container_name: comparei_redis_messaging
+    ports:
+      - "6379:6379"
+    networks:
+      - comparei_net
+
+networks:
+  comparei_net:
+    external: true
