@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  redis:
+  redis_messaging:
     image: redis:6-alpine
     container_name: comparei_redis_messaging
     ports:
